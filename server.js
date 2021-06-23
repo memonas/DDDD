@@ -819,7 +819,7 @@ client.on("message", message => {
 \`${prefix}settings limitstime\` : تحديد الوقت الذي من خلالة يتم التبنيد كـ مثال اذا شخص بند 5 في دقيقة البوت يبنده
 \`${prefix}antibots on\` : منع دخول بوتات
 \`${prefix}antibots off\` : السماح للبوتات بالدخول
-\`شرح البوت \` : <https://youtu.be/6B9nrQp02Rk>
+
 `);
         })
         .then(e => {
