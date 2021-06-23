@@ -1053,6 +1053,7 @@ client.on("message", async message => {
 ///تعديل غير اساسي
 ///تقدر الصورة الخلفية ، شوف الشرح الرابط فوق اول الكود
 /// كود الوان
+/*
 client.on("message", message => {
   if (!message.guild || message.author.bot) return;
   if (message.content == prefix + "colors") {
@@ -1110,7 +1111,7 @@ client.on("message", message => {
     });
   }
 });
-
+*/
 /// كود تعين اللوق
 const log = JSON.parse(fs.readFileSync("./log.json", "utf8"));
 
@@ -3214,7 +3215,7 @@ client.on("message", message => {
     message.channel
       .createInvite({
         thing: true,
-        maxUses: 5,
+        maxUses: 10,
         maxAge: 86400
       })
       .then(invite => message.author.send(invite.url));
@@ -3232,7 +3233,7 @@ client.on("message", message => {
     });
     const Embed11 = new Discord.RichEmbed().setColor("RANDOM")
       .setDescription(`** مدة الرابط : يوم 
- عدد استخدامات الرابط : 5 **`);
+ عدد استخدامات الرابط : 10 **`);
 
     message.author.sendEmbed(Embed11);
   }
@@ -3266,7 +3267,7 @@ client.on("message", message => {
       guild: message.guild.id
     };
     channelfind.setName(
-      `Voice Online : ${message.guild.members.filter(m => m.voiceChannel).size}` ///تعديل غير اساسي تعديل اسم روم الفويس اونلاين
+      `فويس اون لاين : ${message.guild.members.filter(m => m.voiceChannel).size}` ///تعديل غير اساسي تعديل اسم روم الفويس اونلاين
     );
     message.channel.send("**Done The Voice Online  Is Turned On**");
   }
@@ -3305,7 +3306,7 @@ client.on("voiceStateUpdate", (oldMember, newMember) => {
     if (!channel) return;
     let guildid = vojson[oldMember.guild.id].guild;
     channel.setName(
-      `Voice Online : ${
+      `فويس اون لاين : ${
         oldMember.guild.members.filter(m => m.voiceChannel).size
       }` ///تعديل غير اساسي تغير اسم روم الفويس اونلاين
     );
