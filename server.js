@@ -36,10 +36,10 @@ const { get } = require("snekfetch");
 const guild = require("guild");
 const dateFormat = require("dateformat");
 const YouTube = require("simple-youtube-api");
-const youtube = new YouTube("AIzaSyAXaeBh837k38o_lwSADet8UTO7X21DGsY"); //تعديل اساسي سوي اي بي اي جديد
+const youtube = new YouTube("AIzaSyAYAARBgimcmufCupRSDbdmwjphwqX80GI"); //تعديل اساسي سوي اي بي اي جديد
 const hastebins = require("hastebin-gen");
 const getYoutubeID = require("get-youtube-id");
-const yt_api_key = "AIzaSyAXaeBh837k38o_lwSADet8UTO7X21DGsY"; ///تعديل اساسي سوي اي بي اي جديد
+const yt_api_key = "AIzaSyAYAARBgimcmufCupRSDbdmwjphwqX80GI"; ///تعديل اساسي سوي اي بي اي جديد
 const pretty = require("pretty-ms");
 client.login(process.env.TOKEN);
 const queue = new Map();
@@ -227,7 +227,7 @@ client.on("message", message => {
       .addField("**Channels** : ", `» ${client.channels.size} `, true)
       .addField("**Users** : ", `» ${client.users.size} `, true)
       .addField("**Bot Name** :  ", `» ${client.user.tag} `, true)
-      .addField("**Bot Owner** :  ", `» <@359541019836022784>`, true) // تعديل اساسي غير الايدي لايدي حسابك
+      .addField("**Bot Owner** :  ", `» <@664520235713560577>`, true) // تعديل اساسي غير الايدي لايدي حسابك
       .setImage("")
       .setFooter(message.author.username, message.client.avatarURL);
     message.channel.send(bot);
@@ -1785,6 +1785,7 @@ client.on("voiceStateUpdate", (voiceOld, voiceNew) => {
 ///////////////////
 
 ///تعديل اساسي
+/*
 /// كود الرد التلقائي
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -1795,6 +1796,7 @@ client.on("message", message => {
     message.channel.sendFile("");
   }
 });
+*/
 
 ////تعديل غير اساسي
 /// كود اختيار لون
