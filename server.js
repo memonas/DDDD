@@ -903,7 +903,8 @@ client.on("message", message => {
 \`${prefix}Volume\` : تغيير الصوت [vol] 
 \`${prefix}np\` : عرض مايتم تشغيله الان [np] 
 \`${prefix}repeat\` : تكرار الاغنية 
-\`شرح البوت \` : <https://youtu.be/6B9nrQp02Rk>
+
+
 
 `);
         })
